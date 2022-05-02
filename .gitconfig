@@ -19,11 +19,7 @@
 	squash = commit --squash
 	unstage = reset HEAD
 	rum = rebase master@{u}
-	gst = git
-	gst = git
-	gst = git
 	su = submodule update --init --recursive
 	plog = log     --graph     --abbrev-commit -    -date=relative     --decorate     --all     --format=format:\"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)\"
-	gst = git
 [url "git@github.com:"]
 	pushInsteadOf = https://github.com/
