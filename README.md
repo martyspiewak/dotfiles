@@ -12,10 +12,18 @@
   ```
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   ```
+* Clone plugins and themes:
+  ```
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+  ```
 * Symlink .zshrc:
   ```
   ln -s ~/workspace/martyspiewak/dotfiles/.zshrc ~/.zshrc
   source ~/.zshrc
+  ```
+* Install Powerlevel10k:
+  ```
+  brew install romkatv/powerlevel10k/powerlevel10k
   ```
 * Install luan/nvim:
   ```
