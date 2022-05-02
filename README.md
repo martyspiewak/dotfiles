@@ -33,6 +33,10 @@
   ```
   ln -s ~/workspace/martyspiewak/dotfiles/nvim/lua/user ~/.config/nvim/lua
   ```
+* Symlink gitconfig (or just copy relevant parts):
+  ```
+  ln -s ~/workspace/martyspiewak/dotfiles/.gitconfig ~/.gitconfig
+  ```
 * Install Flycut and Rectangle:
-  * Flycut in App Store
+  * Flycut in App Store (or https://github.com/TermiT/Flycut/releases)
   * Rectangle: https://rectangleapp.com/
