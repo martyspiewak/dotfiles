@@ -121,3 +121,7 @@ alias ssh-key-load='~/workspace/martyspiewak/dotfiles/bin/ssh-key-load'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="/usr/local/sbin:$PATH"
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+
+for FILE in ~/workspace/martyspiewak/dotfiles/zshrc-extensions/*.sh; do
+    source $FILE
+done
