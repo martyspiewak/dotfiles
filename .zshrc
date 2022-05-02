@@ -116,6 +116,7 @@ alias gpr='git pull -r'
 alias gst='git status'
 alias gap='git add -p'
 alias vim='nvim'
+alias ssh-key-load='~/workspace/martyspiewak/dotfiles/bin/ssh-key-load'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -1,0 +1,7 @@
+set -e
+
+# 7 days
+MINUTES=10080
+
+/usr/bin/ssh-add -D
+lpass show --notes "Github SSH Key" | /usr/bin/ssh-add -t ${MINUTES}M -
