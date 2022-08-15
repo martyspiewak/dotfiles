@@ -124,6 +124,6 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
-for FILE in ~/workspace/martyspiewak/dotfiles/zshrc-extensions/*.sh; do
-    source $FILE
+for FILE in $(find ~/workspace/martyspiewak/dotfiles/zshrc-extensions -maxdepth 1 -name "*.sh"); do
+  source $FILE
 done
