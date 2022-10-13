@@ -124,6 +124,23 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
+# Python
+if [[ "$(which python3 >/dev/null && echo $?)" ]]; then
+  ln -s -f "$(which python3)" /usr/local/bin/python
+fi
+
+# Config extensions
 for FILE in $(find ~/workspace/martyspiewak/dotfiles/zshrc-extensions -maxdepth 1 -name "*.sh"); do
   source $FILE
+done
+
+# Functions
+export FPATH=$FPATH:~/workspace/martyspiewak/dotfiles/functions
+
+for FILE in ~/workspace/martyspiewak/dotfiles/functions/*; do
+  if [[ $(basename $FILE) == "README.md" ]]; then
+    continue
+  fi
+
+  autoload -Uz $FILE
 done
