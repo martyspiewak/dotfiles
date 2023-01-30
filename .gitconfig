@@ -3,6 +3,7 @@
 	email = spiewakmarty@gmail.com
 [alias]
 	st = status
+	sh = !git --no-pager show -s
 	di = diff
 	co = checkout
 	ci = duet-commit
