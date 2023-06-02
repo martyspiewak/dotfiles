@@ -40,6 +40,3 @@
 * Install Flycut and Rectangle:
   * Flycut in App Store (or https://github.com/TermiT/Flycut/releases)
   * Rectangle: https://rectangleapp.com/
-
-# Troubleshooting
-* If getting `bufferline` errors, try removing `bufferline` line from `before.lua`, reopening vim and synching, then adding back.
