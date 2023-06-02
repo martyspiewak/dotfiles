@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=~/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -96,7 +96,7 @@ source "$ZSH/oh-my-zsh.sh"
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-export EDITOR='nvim'
+export EDITOR='lvim'
 # fi
 
 # Compilation flags
@@ -114,7 +114,7 @@ export EDITOR='nvim'
 alias gpr='git pull -r'
 alias gst='git status'
 alias gap='git add -p'
-alias vim='nvim'
+alias vim='lvim'
 alias ssh-key-load='~/workspace/martyspiewak/dotfiles/bin/ssh-key-load'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
