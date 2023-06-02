@@ -25,13 +25,13 @@
   ```
   brew install romkatv/powerlevel10k/powerlevel10k
   ```
-* Install luan/nvim:
+* Install luan/nvim (check latest version [here](https://www.lunarvim.org/docs/installation#release):
   ```
-  git clone https://github.com/luan/nvim ~/.config/nvim
+  LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
   ```
-* Symlink nvim config:
+* Symlink lvim config:
   ```
-  ln -s ~/workspace/martyspiewak/dotfiles/nvim/lua/user ~/.config/nvim/lua
+  ln -s ~/workspace/martyspiewak/dotfiles/lvim/config.lua ~/.config/lvim/config.lua
   ```
 * Symlink gitconfig (or just copy relevant parts):
   ```
