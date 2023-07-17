@@ -6,7 +6,7 @@
   ```
 * Brew Bundle:
   ```
-  brew bundle install --file ~/workpace/martyspiewak/dotfiles/Brewfile
+  brew bundle install --file ~/workspace/martyspiewak/dotfiles/Brewfile
   ```
 * Install Oh My Zsh:
   ```

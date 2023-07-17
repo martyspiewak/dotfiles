@@ -4,4 +4,7 @@ set -e
 MINUTES=10080
 
 /usr/bin/ssh-add -D
-lpass show --notes "Github SSH Key" | /usr/bin/ssh-add -t ${MINUTES}M -
+eval $(op signin)
+op item get "Github SSH Key" --fields notesPlain --format json \
+  | jq -r .value \
+  | /usr/bin/ssh-add -t ${MINUTES}M -
